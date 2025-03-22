@@ -247,10 +247,11 @@ div.loader{
     gap: 15px;
     padding: 12px;
     width: 400px;
+    margin: 10px;
   }
 
   section.recipe{
-    width: 450px;
+    width: 410px;
     margin-left: -65px;
     margin-right: 10px;
   }
