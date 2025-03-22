@@ -1,0 +1,213 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Montserrat",sans-serif;
+  background: #ccc;
+}
+
+header{
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form.submit{
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+  padding: 10px;
+}
+
+form.submit > input,button{
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 2px rgba(255,0,0,0.5);
+}
+
+form.submit > input{
+  width: 400px;
+  height: 50px;
+  font-size: 1rem;
+  color: #588157;
+  line-height: 20px;
+  flex-grow: 1;
+  min-width: 180px;
+  max-width: 400px;
+}
+
+form.submit > input:focus,form.submit > button:focus{
+  outline: 4px solid #0077b6;
+}
+
+form.submit > input::placeholder{
+  opacity: 0.6;
+}
+
+form.submit > button{
+  cursor: pointer;
+  font-family: "McLaren",cursive;
+  font-weight: 600;
+  font-size: 1rem;
+  background: #ffb703;
+  color: #000;
+}
+
+form.submit > button::before{
+  content: "+";
+}
+
+p.hint{
+  color: #ca6702;
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+section.ingredients{
+  margin-left: 45px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+section.ingredients > div > h2{
+  font-family: "McLaren";
+}
+
+section.ingredients > div > ul{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+div.ingredient{
+  display: flex;
+  justify-content: space-between;
+}
+
+div.ingredient > button{
+  width: 15px;
+  height: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  box-shadow: none;
+}
+
+section.ingredients > ul,li{
+  color: #588157;
+}
+
+div.get-recipe-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  padding: 40px 30px;
+  border-radius: 8px;
+  background: #F0EFEB;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+}
+
+div.get-recipe-container > div > h3{
+  color: #588157;
+  margin-bottom: 8px;
+}
+
+div.get-recipe-container > div > p{
+  opacity: 0.8;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+div.recipe-buttons > button{
+  background: #D17557;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+section.recipe{
+  color: #000;
+  border-radius: 8px;
+  background-color: #cbf3f0;
+  padding: 35px 50px;
+  font-family: "Roboto",sans-serif;
+  width: 680px;
+  margin-left: -100px;
+  margin-bottom: 80px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+section.recipe > h1{
+  margin: 30px 0;
+  color: #3a5a40;
+  font-size: 1.5rem;
+}
+
+section.recipe > ul,section.recipe ol{
+  font-family: "McLaren",cursive;
+}
+
+section.recipe > h2{
+  color: #6c757d;
+}
+div.recipe{
+  color: #475467;
+  line-height: 35px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-left: 100px;
+  margin-top: 40px;
+  max-width: 500px;
+}
+
+div.recipe > h3{
+  margin: 10px 0;
+}
+
+div.recipe ul li,div.recipe ol li{
+  margin-bottom: 8px;
+  margin-left: 20px;
+}
+
+@keyframes loader{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+div.loader{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1.5px solid #cbf3f0;
+  border-top: 1.5px solid #fff;
+  animation: loader 1s infinite linear;
+}
