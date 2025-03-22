@@ -80,6 +80,7 @@ p.hint{
   font-weight: 500;
   font-size: 0.95rem;
 }
+
 section.ingredients{
   margin-left: 45px;
   margin-top: 40px;
@@ -216,7 +217,7 @@ div.loader{
 
 @media (max-width: 600px) {
   header{
-    width: 100%;
+    width: 100vh;
   }
 
   form.submit{
@@ -233,6 +234,11 @@ div.loader{
   form.submit > button{
     width: 180px;
     font-size: 0.85rem;
+  }
+
+  div.ingredient > button{
+    margin-right: 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
   }
 
   p.hint{
